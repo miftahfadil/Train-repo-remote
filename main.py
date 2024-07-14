@@ -1,4 +1,10 @@
 def sum_all(*numbers:int|float|list[int|float])->int|float:
+    '''
+    Menjumlahkan semua bilangan pada argumen
+    :param *numbers: semua bilangan yang akan dijumlah
+
+    :return: hasil penjumlahan semua argumen
+    '''
     total = 0
     for number in numbers:
         if isinstance(number, list):
